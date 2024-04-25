@@ -38,7 +38,7 @@ export function createAmplifyHosting(
 	})
 
 	amplifyApp.addBranch(props.branch, {
-		stage: props.branch === 'master' ? 'PRODUCTION' : 'DEVELOPMENT',
+		stage: props.branch === 'main' ? 'PRODUCTION' : 'DEVELOPMENT',
 		branchName: props.branch,
 	})
 
