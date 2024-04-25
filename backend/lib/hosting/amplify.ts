@@ -4,7 +4,7 @@ import * as amplify from '@aws-cdk/aws-amplify-alpha'
 
 
 type AmplifyHostingProps = {
-	appName: "next_js"
+	appName: "fullstack-amplify-example"
 	branch: "main"
 	ghOwner: "hariranjitkar"
 	repo: "hosting-fullstack-cdk"
