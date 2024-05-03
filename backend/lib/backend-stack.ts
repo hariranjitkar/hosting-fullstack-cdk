@@ -22,6 +22,7 @@ import {
 import { AttributeType, BillingMode, Table } from 'aws-cdk-lib/aws-dynamodb'
 
 import * as path from 'path'
+import { Schema } from '@aws-cdk/aws-appsync';
 import {
   GraphqlApi,
   ISchema,
@@ -77,7 +78,11 @@ export class BackendStack extends cdk.Stack {
 
     const api = new GraphqlApi(this, 'TodoTestAPI', {
       name: 'TodoTestAPI',
-      schema: Schema.fromAsset(path.join(__dirname, 'schema.graphql')),
+      // ...
+
+      // ...
+
+        schema: Schema.fromAsset(path.join(__dirname, 'schema.graphql')),
       authorizationConfig: {
         defaultAuthorization: {
           authorizationType: AuthorizationType.USER_POOL,
