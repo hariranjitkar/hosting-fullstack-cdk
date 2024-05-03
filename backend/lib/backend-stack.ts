@@ -23,13 +23,13 @@ import { AttributeType, BillingMode, Table } from 'aws-cdk-lib/aws-dynamodb'
 
 import * as path from 'path'
 import {
-    GraphqlApi,
-    Schema,
-    AuthorizationType,
-    FieldLogLevel,
-    MappingTemplate,
-    PrimaryKey,
-    Values,
+  GraphqlApi,
+  ISchema,
+  AuthorizationType,
+  FieldLogLevel,
+  MappingTemplate,
+  PrimaryKey,
+  Values,
 } from '@aws-cdk/aws-appsync-alpha'
 
 
